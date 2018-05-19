@@ -1,0 +1,58 @@
+//
+//  PrefixHeader.pch
+//  CustomProject
+//
+//  Created by mozhu on 17/3/8.
+//  Copyright © 2017年 puyue.com. All rights reserved.
+//
+
+//全局宏
+#import "UtilsMacros.h"
+#import "URLMacros.h"
+#import "ThirdMacros.h"
+#import "CommonMacros.h"
+
+
+//基础类
+#import "AppDelegate.h"
+#import "AppDelegate+AppService.h"
+#import "AppStyleConfiguration.h"
+#import "RootViewController.h"
+#import "ZFdes.h"
+#import "UserManager.h"
+#import "MyControl.h"
+#import "MBProgressHUD+PJH.h"
+#import "BaseHttp.h"
+#import "AppManager.h"
+
+//控件分类
+#import "UIImageView+Style.h"
+#import "UIView+Style.h"
+#import "UIView+BlockGesture.h"
+#import "UILabel+Style.h"
+#import "GTCommontHeader.h"
+#import "UITextField+Blocks.h"
+#import "UITextField+Style.h"
+#import "UIButton+Indicator.h"
+#import "UIButton+WebCache.h"
+#import "UIImageView+WebCache.h"
+#import "UIButoon+Style.h"
+#import "UIView+Frame.h"
+#import "UIViewController+AlertViewAndActionSheet.h"
+
+//第三方
+#import <MJRefresh.h>
+#import <MJExtension.h>
+#import <Masonry.h>
+#import <SDWebImageManager.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "SDCycleScrollView.h"
+#import "SVProgressHUD.h"
+#import "CYLTabBarController.h"
+#import "IQKeyboardManager.h"
+#import "UIScrollView+DREmptyDataSet.h"
+#import <UMSocialCore/UMSocialCore.h>
+#import <MBProgressHUD.h>
+#import <YYText.h>
+#import "BJNoDataView.h"// 暂无数据
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CuoTiCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="157" height="87"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="157" height="87"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dhq-nZ-Efg">
+                        <rect key="frame" x="0.0" y="0.0" width="157" height="87"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Dhq-nZ-Efg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5Hq-C2-4Yg"/>
+                <constraint firstAttribute="trailing" secondItem="Dhq-nZ-Efg" secondAttribute="trailing" id="PdY-yo-4VB"/>
+                <constraint firstAttribute="bottom" secondItem="Dhq-nZ-Efg" secondAttribute="bottom" id="V7y-6g-CVo"/>
+                <constraint firstItem="Dhq-nZ-Efg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZNG-oa-eIN"/>
+            </constraints>
+            <size key="customSize" width="157" height="87"/>
+            <connections>
+                <outlet property="BGImageView" destination="Dhq-nZ-Efg" id="InB-hG-SXx"/>
+            </connections>
+            <point key="canvasLocation" x="-83.5" y="14.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
