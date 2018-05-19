@@ -41,6 +41,17 @@
     [ShareManager sharedInstance].thumbIamge = [UIImage imageNamed:@"logo"];
     [[ShareManager sharedInstance] showShareView];
 }
+
+-(void)DLSlideView:(DLSlideView *)slide didSwitchTo:(NSInteger)index
+{
+    
+}
+- (UIViewController *)DLSlideView:(DLSlideView *)sender controllerAt:(NSInteger)index
+{
+    UIViewController *vc =  [[UIViewController alloc]init];
+    return vc;
+    
+}
 -(void)left_button_event:(UIButton *)sender
 {
     
