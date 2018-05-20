@@ -14,9 +14,11 @@
 
 @implementation StayPrescribeViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     self.navView.hidden = YES;
+
 }
 
 

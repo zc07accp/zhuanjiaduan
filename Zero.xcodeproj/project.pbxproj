@@ -209,6 +209,7 @@
 		B9832BC520947065002C5DE1 /* DiZhiCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9832BC420947065002C5DE1 /* DiZhiCityViewController.m */; };
 		B999050820B1360500C7D448 /* StayConsultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B999050720B1360500C7D448 /* StayConsultViewController.m */; };
 		B999050B20B1385200C7D448 /* StayPrescribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B999050A20B1385200C7D448 /* StayPrescribeViewController.m */; };
+		B999050E20B1752F00C7D448 /* StayConsultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B999050D20B1752F00C7D448 /* StayConsultCell.m */; };
 		B9B8CD6020AFF7CA00E0C2B3 /* DLLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8CD5020AFF7CA00E0C2B3 /* DLLRUCache.m */; };
 		B9B8CD6120AFF7CA00E0C2B3 /* DLTabedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8CD5620AFF7CA00E0C2B3 /* DLTabedSlideView.m */; };
 		B9B8CD6220AFF7CA00E0C2B3 /* DLScrollTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8CD5B20AFF7CA00E0C2B3 /* DLScrollTabbarView.m */; };
@@ -663,6 +664,8 @@
 		B999050720B1360500C7D448 /* StayConsultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StayConsultViewController.m; sourceTree = "<group>"; };
 		B999050920B1385200C7D448 /* StayPrescribeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StayPrescribeViewController.h; sourceTree = "<group>"; };
 		B999050A20B1385200C7D448 /* StayPrescribeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StayPrescribeViewController.m; sourceTree = "<group>"; };
+		B999050C20B1752F00C7D448 /* StayConsultCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StayConsultCell.h; sourceTree = "<group>"; };
+		B999050D20B1752F00C7D448 /* StayConsultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StayConsultCell.m; sourceTree = "<group>"; };
 		B9B8CD4E20AFF7CA00E0C2B3 /* DLTabedSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLTabedSlideView.h; sourceTree = "<group>"; };
 		B9B8CD5020AFF7CA00E0C2B3 /* DLLRUCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLLRUCache.m; sourceTree = "<group>"; };
 		B9B8CD5120AFF7CA00E0C2B3 /* DLCacheProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLCacheProtocol.h; sourceTree = "<group>"; };
@@ -1658,6 +1661,8 @@
 				6B626BD21E976648007EA3C5 /* Home.xcassets */,
 				80599C33208F087400DD51DF /* HomeView.h */,
 				80599C34208F087400DD51DF /* HomeView.m */,
+				B999050C20B1752F00C7D448 /* StayConsultCell.h */,
+				B999050D20B1752F00C7D448 /* StayConsultCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2346,6 +2351,7 @@
 				6B0D89E51E700F8700D595DD /* NSFileManager+Paths.m in Sources */,
 				803BA6DB2091AB3200FD2871 /* ShaiXuanVC.m in Sources */,
 				6B57F67D1E723E8E0054C727 /* FSTextView.m in Sources */,
+				B999050E20B1752F00C7D448 /* StayConsultCell.m in Sources */,
 				6B0D8A291E700F8700D595DD /* UITextField+Style.m in Sources */,
 				6B0D8A3A1E700F8700D595DD /* WebView+Debug.m in Sources */,
 				B9B8CD7D20B002CB00E0C2B3 /* BJNoDataView.m in Sources */,

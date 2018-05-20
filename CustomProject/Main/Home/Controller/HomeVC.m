@@ -17,15 +17,52 @@
 #import "MessageListVC.h"
 
 #import "StayConsultViewController.h"
+#import "StayPrescribeViewController.h"
 @interface HomeVC ()<DLCustomSlideViewDelegate,BaseViewControllerDelegate>
 @property(nonatomic,strong)HomeView *mainV;
 @property(nonatomic,strong)DLScrollTabbarView *topTabBar;
 @property(nonatomic,strong)DLCustomSlideView *slideView;
 @property (nonatomic, strong) NSArray  *titleArray;
-
 @end
-
 @implementation HomeVC
+
+
+
+-(DLCustomSlideView *)slideView
+{
+    if (!_slideView) {
+        DLLRUCache *cache = [[DLLRUCache alloc] initWithCount:self.titleArray.count];
+        _slideView=[[DLCustomSlideView alloc]initWithFrame:CGRectMake(0, kMainTopHeight, kMainScreen_width, kMainScreen_height-kMainTopHeight)];
+        _slideView.tabbar = self.topTabBar;
+        _slideView.cache = cache;
+        [_slideView setup];
+        _slideView.delegate=self;
+        _slideView.baseViewController = self;
+        _slideView.selectedIndex=0;
+    }
+    return _slideView;
+}
+-(DLScrollTabbarView *)topTabBar
+{
+    if (!_topTabBar) {
+
+        _topTabBar=[[DLScrollTabbarView alloc]initWithFrame:CGRectMake(0, kMainTopHeight, kMainScreen_width, 40)];
+        _topTabBar.tabItemNormalColor = [UIColor blackColor];
+        _topTabBar.tabItemSelectedColor = [UIColor redColor];
+        _topTabBar.tabItemNormalFontSize = 15.0f;
+        _topTabBar.trackColor =[UIColor redColor];
+        _topTabBar.backgroundColor = [UIColor whiteColor];
+        _topTabBar.trackColor = [AppStyleConfiguration ColorWithMain];
+        NSMutableArray *itmeArr=[[NSMutableArray alloc]init];
+
+        for (int i=0; i<self.titleArray.count; i++)
+        {
+            [itmeArr addObject:[DLScrollTabbarItem itemWithTitle:self.titleArray[i] width:self.view.frame.size.width/self.titleArray.count]];
+        }
+        _topTabBar.tabbarItems = itmeArr;
+    }
+    return _topTabBar;
+}
 
 -(NSArray *)titleArray{
     if (!_titleArray) {
@@ -38,34 +75,9 @@
     [super viewDidLoad];
     self.navTitle = @"咨询订单";
 //  [kAppWindow addSubview:[[NSClassFromString(@"LoginVC") alloc]initWithFrame:[UIScreen mainScreen].bounds]];
-    UIViewController *vc = [[NSClassFromString(@"LoginVC") alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
+//    UIViewController *vc = [[NSClassFromString(@"LoginVC") alloc]init];
+//    [self.navigationController pushViewController:vc animated:YES];
     self.navRightBtn.hidden = NO;
-    [self configView];
-}
-
--(void)configView
-{
-    DLLRUCache *cache = [[DLLRUCache alloc] initWithCount:2];
-    self.slideView=[[DLCustomSlideView alloc] initWithFrame:CGRectMake(0, kMainTopHeight, kMainScreen_width, kMainScreen_height - kMainTopHeight)];
-    self.topTabBar= [[DLScrollTabbarView alloc]initWithFrame:CGRectMake(0, kMainTopHeight, kMainScreen_width, 40)];
-    self.topTabBar.tabItemNormalColor = [UIColor blackColor];
-    self.topTabBar.tabItemSelectedColor = [UIColor redColor];
-    self.topTabBar.tabItemNormalFontSize = 15.0f;
-    self.topTabBar.trackColor =[UIColor redColor];
-    NSMutableArray *itmeArr=[[NSMutableArray alloc]init];
-
-    for (int i=0; i<self.titleArray.count; i++)
-    {
-        [itmeArr addObject:[DLScrollTabbarItem itemWithTitle:self.titleArray[i] width:self.view.frame.size.width/self.titleArray.count]];
-    }
-    self.topTabBar.tabbarItems = itmeArr;
-    self.slideView.tabbar = self.topTabBar;
-    self.slideView.cache = cache;
-    self.slideView.selectedIndex = 0;
-    [self.slideView setup];
-    self.slideView.delegate = self;
-    self.slideView.baseViewController = self;
     [self.view addSubview:self.slideView];
 }
 -(void)right_button_event:(UIButton *)sender{
@@ -76,15 +88,28 @@
     [[ShareManager sharedInstance] showShareView];
 }
 
-
 - (UIViewController *)DLCustomSlideView:(DLCustomSlideView *)sender controllerAt:(NSInteger)index {
 
-    StayConsultViewController *vc =  [[StayConsultViewController alloc]init];
+    if (index==1)
+    {
+        StayPrescribeViewController *vc = [[StayPrescribeViewController alloc]init];//待开方
+        return vc;
+    }
+    else
+    {
+        StayConsultViewController *vc =  [[StayConsultViewController alloc]init];//待咨询
+        
+         return vc;
+    }
 
-    return vc;
 }
 
 
+-(void)DLCustomSlideView:(DLCustomSlideView *)sender didSelectedAt:(NSInteger)index
+{
+    //    self.navTitle = self.titleArr[index][@"categoryName"];
+
+}
 - (NSInteger)numberOfTabsInDLCustomSlideView:(DLCustomSlideView *)sender {
 
     return self.titleArray.count;
