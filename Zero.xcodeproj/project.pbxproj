@@ -207,6 +207,8 @@
 		B9184C3420908AB200B7F5CF /* GeRenTouxiangVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9184C3320908AB200B7F5CF /* GeRenTouxiangVC.m */; };
 		B91F7A272091D6460091BA44 /* XiuGaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91F7A262091D6460091BA44 /* XiuGaiViewController.m */; };
 		B9832BC520947065002C5DE1 /* DiZhiCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9832BC420947065002C5DE1 /* DiZhiCityViewController.m */; };
+		B999050820B1360500C7D448 /* StayConsultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B999050720B1360500C7D448 /* StayConsultViewController.m */; };
+		B999050B20B1385200C7D448 /* StayPrescribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B999050A20B1385200C7D448 /* StayPrescribeViewController.m */; };
 		B9B8CD6020AFF7CA00E0C2B3 /* DLLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8CD5020AFF7CA00E0C2B3 /* DLLRUCache.m */; };
 		B9B8CD6120AFF7CA00E0C2B3 /* DLTabedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8CD5620AFF7CA00E0C2B3 /* DLTabedSlideView.m */; };
 		B9B8CD6220AFF7CA00E0C2B3 /* DLScrollTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8CD5B20AFF7CA00E0C2B3 /* DLScrollTabbarView.m */; };
@@ -657,6 +659,10 @@
 		B91F7A262091D6460091BA44 /* XiuGaiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XiuGaiViewController.m; sourceTree = "<group>"; };
 		B9832BC320947065002C5DE1 /* DiZhiCityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiZhiCityViewController.h; sourceTree = "<group>"; };
 		B9832BC420947065002C5DE1 /* DiZhiCityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiZhiCityViewController.m; sourceTree = "<group>"; };
+		B999050620B1360500C7D448 /* StayConsultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StayConsultViewController.h; sourceTree = "<group>"; };
+		B999050720B1360500C7D448 /* StayConsultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StayConsultViewController.m; sourceTree = "<group>"; };
+		B999050920B1385200C7D448 /* StayPrescribeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StayPrescribeViewController.h; sourceTree = "<group>"; };
+		B999050A20B1385200C7D448 /* StayPrescribeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StayPrescribeViewController.m; sourceTree = "<group>"; };
 		B9B8CD4E20AFF7CA00E0C2B3 /* DLTabedSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLTabedSlideView.h; sourceTree = "<group>"; };
 		B9B8CD5020AFF7CA00E0C2B3 /* DLLRUCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLLRUCache.m; sourceTree = "<group>"; };
 		B9B8CD5120AFF7CA00E0C2B3 /* DLCacheProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLCacheProtocol.h; sourceTree = "<group>"; };
@@ -1614,6 +1620,10 @@
 			children = (
 				6B5D5EAB1E70F3F600CACC7F /* HomeVC.h */,
 				6B5D5EAC1E70F3F600CACC7F /* HomeVC.m */,
+				B999050620B1360500C7D448 /* StayConsultViewController.h */,
+				B999050720B1360500C7D448 /* StayConsultViewController.m */,
+				B999050920B1385200C7D448 /* StayPrescribeViewController.h */,
+				B999050A20B1385200C7D448 /* StayPrescribeViewController.m */,
 				B9B8CD7120B0017500E0C2B3 /* MessageListVC.h */,
 				B9B8CD7020B0017400E0C2B3 /* MessageListVC.m */,
 				B9B8CD7220B0017500E0C2B3 /* MessageInfoVC.h */,
@@ -2524,6 +2534,7 @@
 				B9B8CD6320AFF7CA00E0C2B3 /* DLFixedTabbarView.m in Sources */,
 				6B0D89EA1E700F8700D595DD /* NSMutableString+TagReplace.m in Sources */,
 				6B0D8A3B1E700F8700D595DD /* UIWindow+Hierarchy.m in Sources */,
+				B999050B20B1385200C7D448 /* StayPrescribeViewController.m in Sources */,
 				B9B8CD6C20AFFF6B00E0C2B3 /* MessageView.m in Sources */,
 				6B0D8A351E700F8700D595DD /* UIWebView+Blocks.m in Sources */,
 				6B57F68C1E723EAB0054C727 /* GTMBase64.m in Sources */,
@@ -2547,6 +2558,7 @@
 				6B0D8A001E700F8700D595DD /* MKMapView+ZoomLevel.m in Sources */,
 				6B0D8A0F1E700F8700D595DD /* UIDevice+Hardware.m in Sources */,
 				B9D86E92208D8B790026AF94 /* AppManager.m in Sources */,
+				B999050820B1360500C7D448 /* StayConsultViewController.m in Sources */,
 				6B0D8A141E700F8700D595DD /* UIImage+FEBoxBlur.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
